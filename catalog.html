@@ -11,9 +11,10 @@
         <a href="#" class="main-logo">
           Техномарт
         </a>
-        <div class="search-form">
-          <!-- Добавить форму -->
-        </div>
+        <form action="https://echo.htmlacademy.ru" class="search-form" method="get">
+          <label class="visually-hidden" for="search-input">Поиск</label>
+          <input type="search" name="search" id="search-input" placeholder="Поиск:">
+        </form>
         <a href="" class="bookmark">Закладки: 0</a>
         <a href="" class="basket">Корзина: 10</a>
         <a href="" class="checkout">Оформить заказ</a>
@@ -75,7 +76,66 @@
       </ul>
       <h1>Перфораторы</h1>
       <section class="filters">
-        <!-- Фильтры -->
+        <aside class="vertical-filters">
+          <span>Фильтр:</span>
+          <form action="https://echo.htmlacademy.ru" method="get">
+            <fieldset class="filter-item">
+              <legend>Цена</legend>
+              <div class="range-filter">
+                <div class="range-controls">
+                  <div class="scale">
+                    <div class="bar"></div>
+                  </div>
+                  <div class="toggle toggle-min"></div>
+                  <div class="toggle toggle-min"></div>
+                </div>
+                <div class="price-controls">
+                  <input type="text" name="price-min" value="0">
+                  <input type="text" name="price-max" value="30000">
+                </div>
+              </div>
+            </fieldset>
+            <fieldset class="filter-item">
+              <legend>Производители:</legend>
+              <ul>
+                <li class="filter-option">
+                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="Bosch" id="filter-bosch">
+                  <label for="filter-bosch">Bosch</label>
+                </li>
+                <li class="filter-option">
+                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="Интерскол" id="filter-interscol">
+                  <label for="filter-interscol">Интерскол</label>
+                </li>
+                <li class="filter-option">
+                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="Makita" id="filter-makita">
+                  <label for="filter-makita">Makita</label>
+                </li>
+                <li class="filter-option">
+                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="Dewalt" id="filter-dewalt">
+                  <label for="filter-dewalt">Dewalt</label>
+                </li>
+                <li class="filter-option">
+                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="Hitachi" id="filter-hitachi">
+                  <label for="filter-hitachi">Hitachi</label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class="filter-item">
+              <legend>Питание</legend>
+              <ul>
+                <li class="filter-option">
+                  <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-supply" id="filter-battary">
+                  <label for="filter-battary">Аккумуляторные</label>
+                </li>
+                <li class="filter-option">
+                  <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-supply" id="filter-net">
+                  <label for="filter-net">Сетевые</label>
+                </li>
+              </ul>
+            </fieldset>
+            <button class="filter-button button" type="submit">Показать</button>
+          </form>
+        </aside>
       </section>
       <section class="catalog">
         <div class="horizontal-filters">
@@ -262,20 +322,34 @@
       </section>
     </footer>
     <section class="modal-contact modal">
-      <form action="">
-        <!-- Форма -->
+      <h2 class="visually-hidden">Написать нам</h2>
+      <form class="contact-form" action="https://echo.htmlacademy.ru" method="post">
+        <p>
+          <label for="user-name">Ваше имя:</label>
+          <input class="contact-name" type="text" name="name" id="user-name" placeholder="Представтесь, пожалуйста">
+        </p>
+        <p>
+          <label for="user-email">Ваш email:</label>
+          <input class="contact-email" type="email" name="email" id="user-email" placeholder="Для отправки ответ">
+        </p>
+        <p>
+          <label for="user-message">Текст письма:</label>
+          <textarea class="contact-message" name="message" id="user-message" cols="30" rows="10" placeholder="В свободной форме"></textarea>
+        </p>
+        <button type="submit">Отправить</button>
       </form>
-      <span>X</span>
+      <button class="modal-close" type="button">Закрыть</button>
     </section>
     <section class="modal-map modal">
+      <h2 class="visually-hidden">Как до нас добраться</h2>
       <img width="940" height="446" src="img/big-map.png" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
-      <span>x</span>
+      <button class="modal-close" type="button">Закрыть</button>
     </section>
     <section class="cart">
       <h2>Товар добавлен в корзину!</h2>
       <a href="" class="button cart-button">Оформить заказ</a>
       <a href="" class="button continue-button">Продолжить покупки</a>
-      <span>x</span>
+      <button class="modal-close" type="button">Закрыть</button>
     </section>
   </body>
 </html>
