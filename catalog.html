@@ -139,7 +139,27 @@
       </section>
       <section class="catalog">
         <div class="horizontal-filters">
-          <!-- Фильтры -->
+          <span>Сортировка:</span>
+          <ul class="filter-sort">
+            <li class="filter-sort-item">
+              <input type="radio" name="sort" id="by-price" class="visually-hidden filter-sort-radio">
+              <label for="by-price">По цене</label>
+            </li>
+            <li class="filter-sort-item">
+              <input type="radio" name="sort" id="by-type" class="visually-hidden filter-sort-radio">
+              <label for="by-type">По типу</label>
+            </li>
+            <li class="filter-sort-item">
+              <input type="radio" name="sort" id="by-functionality" class="visually-hidden filter-sort-radio">
+              <label for="by-functionality">По функционалу</label>
+            </li>
+            <li class="filter-sort-item">
+              <input type="radio" name="sort" id="sort-up" class="visually-hidden filter-sort-up">
+            </li>
+            <li class="filter-sort-item">
+              <input type="radio" name="sort" id="sort-down" class="visually-hidden filter-sort-down">
+            </li>
+          </ul>
         </div>
         <ul class="catalog-list">
             <li class="catalog-item">
@@ -306,13 +326,13 @@
         </p>
         <ul class="social-list">
           <li class="social-item">
-            <a href=""></a>
+            <a href="" aria-label="Вконтакте"></a>
           </li>
           <li class="social-item">
-            <a href=""></a>
+            <a href="" aria-label="Фейсбук"></a>
           </li>
           <li class="social-item">
-            <a href=""></a>
+            <a href="" aria-label="Инстаграм"></a>
           </li>
         </ul>
         <p>
