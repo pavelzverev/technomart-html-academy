@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style.css">
   </head>
   <body>
 
@@ -24,7 +26,7 @@
         <h1>Интернет магазин строительных материалов и инструментов для ремонта</h1>
         <div class="phone-address">
           <a href="tel:+78125550555">+7(812) 555-05-55</a>
-          <p>г.Санкт-Петербург,ул.Б.Конюшенная,д.19/8</p>
+          <address>г.Санкт-Петербург,ул.Б.Конюшенная,д.19/8</address>
         </div>
         <a href="#" class="sign-in">Войти</a>
         <a href="" class="registration">Регистрация</a>
@@ -45,51 +47,57 @@
 
     <main class="main-content">
       <section class="promo">
-        <h2 class="visually-hidden">Промо-блок</h2>
-          <div class="promo-item matrials">
-            <h3>Материалы</h3>
-            <a href="" class="button promo-button">На любой вкус</a>
-          </div>
-          <div class="promo-item instruments">
-            <h3>Инструмент</h3>
-            <a href="" class="button promo-button">На все случаи</a>
-          </div>
-          <div class="promo-item technics">
-            <h3>Техника</h3>
-            <a href="" class="button promo-button">Для стройки</a>
-          </div>
-          <div class="promo-item slider">
-            <ul class="slider-list">
-              <li class="slider-item">
-                <h3>Дрели</h3>
-                <p>Соседям на радость</p>
-                <a href="">Открыть каталог</a>
-              </li>
-              <li class="slider-item visually-hidden">
-                <h3>Перфораторы</h3>
-                <p>Настоящие мужские игрушки</p>
-                <a href="">Открыть каталог</a>
-              </li>
-            </ul>
-          </div>
+        <div class="horizontal-promo">
+          <h2 class="visually-hidden">Промо-блок</h2>
+            <div class="promo-item materials">
+              <h3>Материалы</h3>
+              <a href="" class="button promo-button">На любой вкус</a>
+            </div>
+            <div class="promo-item instruments">
+              <h3>Инструмент</h3>
+              <a href="" class="button promo-button">На все случаи</a>
+            </div>
+            <div class="promo-item technics">
+              <h3>Техника</h3>
+              <a href="" class="button promo-button">Для стройки</a>
+            </div>
+        </div>
+        <div class="promo-item slider">
+          <ul class="slider-list">
+            <li class="slider-item">
+              <h3>Дрели</h3>
+              <p>Соседям на радость</p>
+              <a class="button slider-button" href="./catalog.html">Открыть каталог</a>
+            </li>
+            <li class="slider-item visually-hidden">
+              <h3>Перфораторы</h3>
+              <p>Настоящие мужские игрушки</p>
+              <a class="button slider-button" href="./catalog.html">Открыть каталог</a>
+            </li>
+          </ul>
+        </div>
+        <div class="vertical-promo">
           <div class="promo-item discounts">
             <h3>Скидки 50%</h3>
             <a href="" class="button promo-button">На 350 товаров</a>
           </div>
-          <div class="promo-item discounts">
+          <div class="promo-item delivery">
             <h3>Доставка</h3>
             <a href="" class="button promo-button">Бесплатно</a>
           </div>
+        </div>
       </section>
 
       <section class="popular">
-        <h2>Популярные товары:</h2>
-        <a href="" class="button popular-button">Все популярные товары</a>
+        <header class="popular-header">
+          <h2>Популярные товары:</h2>
+          <a href="" class="button popular-button">Все популярные товары</a>
+        </header>
         <ul class="catalog-list">
           <li class="catalog-item">
             <div class="catalog-item-button">
-              <a href="" class="buy-item">Купить</a>
-              <a href="" class="add-bookmark">В закладки</a>
+              <a href="" class="button buy-item">Купить</a>
+              <a href="" class="button add-bookmark">В закладки</a>
             </div>
             <img width="200" height="153" src="./img/BOSCH_BFG-9000.jpg" alt="Перфоратор BOSCH BFG 9000">
             <h3>Перфоратор BOSCH BFG 9000</h3>
@@ -130,8 +138,10 @@
       </section>
 
       <section class="popular">
-        <h2>Популярные производители:</h2>
-        <a href="" class="button popular-button">Все производители</a>
+        <header class="popular-header">
+          <h2>Популярные производители:</h2>
+          <a href="" class="button popular-button">Все производители</a>
+        </header>
         <ul class="manufacturer-list">
           <li class="manufacturer-item">
             <a href="">
