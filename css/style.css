@@ -431,3 +431,423 @@ a {
   line-height: 24px;
   color: #000000;
 }
+
+.service-control-item {
+  font-family: "Cuprum-Bold";
+  font-size: 21px;
+  line-height: 30px;
+  color: #ffffff;
+
+  cursor: pointer;
+  background-color: #32425c;
+}
+
+.service-control-item__active {
+  font-family: "Cuprum-Bold";
+  font-size: 21px;
+  line-height: 30px;
+  color: #32425c;
+
+  cursor: pointer;
+  background-color: #ffffff;
+}
+
+.service-control-item:hover,
+.service-control-item:focus {
+  background-color: #293449;
+}
+
+.service-list {
+  list-style: none;
+}
+
+.service-list-item h3{
+  font-family: "Cuprum-Regular";
+  font-size: 36px;
+  line-height: 36px;
+  color: #32425c;
+}
+
+.service-list-item p {
+  font-family: "PTSans";
+  font-size: 13px;
+  line-height: 24px;
+  color: #000000;
+}
+
+.service-list-item-delivery {
+  background-color: #f4f8f9;
+  background-image: url(../img/Delivery.jpg);
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
+.service-list-item-guarantee {
+  background-color: #f4f8f9;
+  background-image: url(../img/Guarantee.jpg);
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
+.service-list-item-credit {
+  background-color: #f4f8f9;
+  background-image: url(../img/Credit.jpg);
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
+.about h2,
+.contacts h2 {
+  font-family: "Cuprum-Regular";
+  font-size: 30px;
+  line-height: 30px;
+  color: #000000;
+}
+
+.about p,
+.contacts p {
+  font-family: "PTSans";
+  font-size: 13px;
+  line-height: 24px;
+  color: #000000;
+}
+
+.company-list {
+  list-style: none;
+}
+
+.company-item {
+  font-size: 18px;
+  line-height: 20px;
+  color: #000000;
+}
+
+.main-footer {
+  background-color: #32425c;
+}
+
+.top-footer .main-logo {
+  font-size: 30px;
+  line-height: 30px;
+}
+
+.link-items {
+  list-style: none;
+}
+
+.link-item a {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.top-footer .link-item a {
+  color: #ffffff;
+}
+
+.middle-footer .link-item a {
+  color: #ffd180;
+}
+
+.link-item a:hover,
+.link-item a:focus {
+  text-decoration: underline;
+}
+
+.link-item a:active {
+  text-decoration: none;
+  opacity: 0.5;
+}
+
+.middle-footer address {
+  font-family: "Cuprum-Regular";
+  font-size: 18px;
+  line-height: 24px;
+  color: #ffffff;
+  font-style: normal;
+}
+
+.bottom-footer {
+  color: #ffffff;
+
+  background-color: #293449;
+}
+
+.bottom-footer p {
+  font-size: 16px;
+  line-height: 18px;
+  color: #ffffff;
+}
+
+.bottom-footer a {
+  color: #ffd180;
+}
+
+.bottom-footer a:hover,
+.bottom-footer a:focus {
+  text-decoration: underline;
+}
+
+.bottom-footer a:active {
+  text-decoration: none;
+  color: #ee3643;
+}
+
+.social-list {
+  list-style: none;
+}
+
+.social-item a {
+  color: #ffffff;
+  text-align: center;
+
+  background-color: #212a3a;
+}
+
+.social-item a:hover,
+.social-item a:focus,
+.social-item a:active {
+  text-decoration: none;
+  color: #ffffff;
+
+  background-color: #ee3643;
+}
+
+.modal-contact {
+  background-color: #ffffff;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.75);
+}
+
+.contact-form label {
+  font-size: 18px;
+  line-height: 18px;
+  color: #000000;
+}
+
+.contact-form input,
+.contact-form textarea {
+  font-family: "PTSans";
+  font-size: 13px;
+  line-height: 18px;
+  color: #a9a9a9;
+
+  background-color: #ffffff;
+
+  border: 2px solid #dee3e4;
+  border-radius: 2px;
+}
+
+.contact-form input:hover,
+.contact-form textarea:hover {
+  border: 2px solid #b5b5b5;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border: 2px solid #ee3643;
+}
+
+.button-block {
+  background-color: #f1f1f1;
+}
+
+.login {
+  font-size: 21px;
+  line-height: 21px;
+  color: #000000;
+}
+
+.login:active {
+  opacity: 0.3;
+}
+
+.profile-list {
+  list-style: none;
+}
+
+.profile-item a {
+  font-size: 16px;
+  line-height: 18px;
+  color: #32425c;
+  text-decoration: underline;
+}
+
+.profile-item a:hover,
+.profile-item a:focus {
+  color: #ee3643;
+}
+
+.profile-item a:active {
+  color: rgba(50, 66, 92, 0.3);
+}
+
+.breadcrumbs {
+  list-style: none;
+}
+
+.breadcrumbs a {
+  font-family: "PTSans";
+  font-size: 13px;
+  font-weight: 18px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.inner-page h1 {
+  font-size: 30px;
+  line-height: 30px;
+  color: #32425c;
+  text-transform: uppercase;
+
+  background-color: #f2f6f8;
+}
+
+.vertical-filters h2,
+.horizontal-filters h2 {
+  font-family: "PTSans";
+  font-size: 13px;
+  line-height: 18px;
+  color: #000000;
+  text-transform: uppercase;
+
+  background-color: #fff;
+}
+
+.vertical-filters h2 {
+  background-color: #f7f3ec;
+}
+
+.horizontal-filters {
+  background-color: #f7f3ec;
+}
+
+.filter fieldset {
+  border: none;
+}
+
+.filter legend {
+  font-family: "PTSans-Bold";
+  font-size: 17px;
+  line-height: 30px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.filter ul {
+  list-style: none;
+  line-height: 20px;
+}
+
+.filter-option label {
+  font-family: "PTSans";
+  font-size: 15px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.filter-input:disabled + label {
+  color: #000000;
+
+  opacity: 0.4;
+}
+
+.filter-sort {
+  list-style: none;
+}
+
+.filter-sort-item label {
+  font-family: "PTSans";
+  font-size: 13px;
+  line-height: 13px;
+  color: #000000;
+  opacity: 0.3;
+  text-transform: uppercase;
+  border-bottom: 1px dotted #ee3643;
+}
+
+.filter-sort-item label:hover,
+.filter-sort-item label:focus {
+  opacity: 1;
+  border-bottom: 1px solid #ee3643;
+}
+
+.filter-sort-item label:active {
+  color: #ee3643;
+  border: none;
+}
+
+.pagination-list {
+  list-style: none;
+}
+
+.pagination-item a {
+  font-family: "PTSans";
+  font-size: 13px;
+  line-height: 18px;
+  color: #000000;
+  text-transform: uppercase;
+  border-radius: 2px;
+
+  border: 1px solid #e5e5e5;
+}
+
+.pagination-item a:hover,
+.pagination-item a:focus {
+  border: 1px solid #bdc6ca;
+}
+
+.pagination-item a:active {
+  border: 1px solid #ee3643;
+}
+
+.pagination-item-active a{
+  font-family: "PTSans";
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #ffffff;
+
+  border: 1px solid #ee3643;
+  border-radius: 2px;
+  background-color: #ee3643;
+}
+
+.description {
+  background-color: #f2f6f8;
+}
+
+.description h2 {
+  font-size: 30px;
+  line-height: 30px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.description p {
+  font-family: "PTSans";
+  font-size: 13px;
+  line-height: 24px;
+  color: #000000;
+}
+
+.cart {
+  background-color: #ffffff;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.75);
+}
+
+.cart h2 {
+  font-size: 30px;
+  line-height: 30px;
+  text-align: center;
+  color: #000000;
+}
+
+.cart-footer {
+  background-color: #f1f1f1;
+}
+
+.continue-button {
+  color: #000000;
+
+  background-color: #ffffff;
+}

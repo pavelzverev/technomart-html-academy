@@ -3,8 +3,10 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style.css">
   </head>
-  <body>
+  <body class="inner-page">
 
     <header class="main-header">
       <div class="top-menu">
@@ -32,7 +34,9 @@
       <div class="profile">
         <div class="profile-items">
           <a href="" class="login">Равшан Джамшутович</a>
-          <a href="" class="logout">Выйти</a>
+          <a href="" class="logout">
+            <img src="./img/svg/icon-logout.svg" alt="Выйти">
+          </a>
         </div>
         <ul class="profile-list">
           <li class="profile-item">
@@ -60,7 +64,7 @@
     <main class="main-content">
       <ul class="breadcrumbs">
         <li class="breadcrubms-item">
-          <a href="">
+          <a class="breadcrumbs-home" href="">
             <img width="15" height="12" src="img/svg/icon-home.svg" alt="home">
           </a>
         </li>
@@ -77,8 +81,8 @@
       <h1>Перфораторы</h1>
       <section class="filters">
         <aside class="vertical-filters">
-          <span>Фильтр:</span>
-          <form action="https://echo.htmlacademy.ru" method="get">
+          <h2>Фильтр:</h2>
+          <form class="filter" action="https://echo.htmlacademy.ru" method="get">
             <fieldset class="filter-item">
               <legend>Цена</legend>
               <div class="range-filter">
@@ -99,7 +103,7 @@
               <legend>Производители:</legend>
               <ul>
                 <li class="filter-option">
-                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="Bosch" id="filter-bosch">
+                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="Bosch" id="filter-bosch" disabled>
                   <label for="filter-bosch">Bosch</label>
                 </li>
                 <li class="filter-option">
@@ -139,7 +143,7 @@
       </section>
       <section class="catalog">
         <div class="horizontal-filters">
-          <span>Сортировка:</span>
+          <h2>Сортировка:</h2>
           <ul class="filter-sort">
             <li class="filter-sort-item">
               <input type="radio" name="sort" id="by-price" class="visually-hidden filter-sort-radio">
@@ -256,8 +260,8 @@
       </section>
       <section class="pagination-form">
         <ul class="pagination-list">
-          <li class="pagination-item">
-            <a href="">1</a>
+          <li class="pagination-item-active">
+            <a  href="">1</a>
           </li>
           <li class="pagination-item">
             <a href="">2</a>
@@ -367,8 +371,10 @@
     </section>
     <section class="cart">
       <h2>Товар добавлен в корзину!</h2>
-      <a href="" class="button cart-button">Оформить заказ</a>
-      <a href="" class="button continue-button">Продолжить покупки</a>
+      <footer class="cart-footer">
+        <a href="" class="button cart-button">Оформить заказ</a>
+        <a href="" class="button continue-button">Продолжить покупки</a>
+      </footer>
       <button class="modal-close" type="button">Закрыть</button>
     </section>
   </body>

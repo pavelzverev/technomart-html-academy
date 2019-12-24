@@ -190,7 +190,7 @@
         <p>Хороший интернет-магазин отличается от плохого не только ценами!</p>
         <div class="service-contrainer">
           <div class="service-controls">
-            <label for="delivery" class="service-control-item">Доставка</label>
+            <label for="delivery" class="service-control-item__active">Доставка</label>
             <label for="guarantee" class="service-control-item">Гарантия</label>
             <label for="credit" class="service-control-item">Кредит</label>
           </div>
@@ -243,7 +243,7 @@
     </main>
     <footer class="main-footer">
       <section class="top-footer">
-        <a href="" class="logo">
+        <a href="" class="main-logo">
          Техномарт
         </a>
         <ul class="link-items">
@@ -285,19 +285,17 @@
         </ul>
       </section>
       <section class="bottom-footer">
-        <div class="copyright">
           <p>© 2010–2017 Компания «Техномарт»<br>
               Все права защищены</p>
-        </div>
         <ul class="social-list">
-          <li class="social-item">
-            <a href="" aria-label="Вконтакте"></a>
+          <li class="social-item social-item-vk">
+            <a href="" aria-label="Вконтакте">Вконтакте</a>
           </li>
-          <li class="social-item">
-            <a href="" aria-label="Фейсбук"></a>
+          <li class="social-item social-item-fb">
+            <a href="" aria-label="Фейсбук">Фейсбук</a>
           </li>
-          <li class="social-item">
-            <a href="" aria-label="Инстаграм"></a>
+          <li class="social-item social-item-instaramm">
+            <a href="" aria-label="Инстаграм">Инстаграмм</a>
           </li>
         </ul>
         <p>
@@ -321,7 +319,9 @@
           <label for="user-message">Текст письма:</label>
           <textarea class="contact-message" name="message" id="user-message" cols="30" rows="10" placeholder="В свободной форме"></textarea>
         </p>
-        <button type="submit">Отправить</button>
+        <p class="button-block">
+          <button class="button modal-contact-button" type="submit">Отправить</button>
+        </p>
       </form>
       <button class="modal-close" type="button">Закрыть</button>
     </section>
